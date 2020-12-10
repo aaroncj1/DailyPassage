@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Schedule>
+    <Day day="1">
+        <Book>1</Book><Chapter>1,2,3,4</Chapter><Psalm>1</Psalm><Video>link</Video>
+    </Day>
+</Schedule>

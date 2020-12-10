@@ -1,0 +1,900 @@
+[
+  {
+    "Day": "1",
+    "Book": "Genesis",
+    "Chapter": "1",
+    "Psa": "1",
+    "Video": "https://www.youtube.com/watch?v=GQI72THyO5I&ab_channel=BibleProject"
+  },
+  {
+    "Day": "2",
+    "Book": "Genesis",
+    "Chapter": "4-7",
+    "Psa": "2",
+    "Video": "https://www.youtube.com/watch?v=YbipxLDtY8c&ab_channel=BibleProject"
+  },
+  {
+    "Day": "3",
+    "Book": "Genesis",
+    "Chapter": "8-11",
+    "Psa": "3",
+    "Video": "https://www.youtube.com/watch?v=KOUV7mWDI34"
+  },
+  {
+    "Day": "4",
+    "Book": "Genesis",
+    "Chapter": "12-15",
+    "Psa": "4",
+    "Video": "https://www.youtube.com/watch?v=F4isSyennFo&t=2s"
+  },
+  {
+    "Day": "5",
+    "Book": "Genesis",
+    "Chapter": "16-18",
+    "Psa": "5",
+    "Video": "https://www.youtube.com/watch?v=8ferLIsvlmI"
+  },
+  {
+    "Day": "6",
+    "Book": "Genesis",
+    "Chapter": "19-21",
+    "Psa": "6",
+    "Video": "https://youtu.be/VpbWbyx1008"
+  },
+  {
+    "Day": "7",
+    "Book": "Genesis",
+    "Chapter": "22-24",
+    "Psa": "7",
+    "Video": ""
+  },
+  {
+  "Day": "8",
+  "Book": "Genesis",
+  "Chapter": "25-28",
+  "Psa": "8",
+  "Video": ""
+  },
+  {
+    "Day": "9",
+    "Book": "Genesis",
+    "Chapter": "29-31",
+    "Psa": "9",
+    "Video": ""
+  },
+  {
+    "Day": "10",
+    "Book": "Genesis",
+    "Chapter": "32-34",
+    "Psa": "10",
+    "Video": ""
+  },
+  {
+    "Day": "11",
+    "Book": "Genesis",
+    "Chapter": "35-37",
+    "Psa": "11",
+    "Video": ""
+  },
+  {
+    "Day": "12",
+    "Book": "Genesis",
+    "Chapter": "38-40",
+    "Psa": "12",
+    "Video": ""
+  },
+  {
+    "Day": "13",
+    "Book": "Genesis",
+    "Chapter": "41-42",
+    "Psa": "13",
+    "Video": ""
+  },
+  {
+    "Day": "14",
+    "Book": "Genesis",
+    "Chapter": "43-45",
+    "Psa": "14",
+    "Video": ""
+  },
+  {
+    "Day": "15",
+    "Book": "Genesis",
+    "Chapter": "46-47",
+    "Psa": "15",
+    "Video": ""
+  },
+  {
+    "Day": "16",
+    "Book": "Genesis",
+    "Chapter": "48-50",
+    "Psa": "16",
+    "Video": ""
+  },
+  {
+    "Day": "17",
+    "Book": "Exodus",
+    "Chapter": "1-3",
+    "Psa": "17",
+    "Video": "https://www.youtube.com/watch?v=jH_aojNJM3E"
+  },
+  {
+  "Day": "18",
+  "Book": "Exodus",
+  "Chapter": "4-6",
+  "Psa": "18",
+  "Video": "https://www.youtube.com/watch?v=0uf-PgW7rqE"
+  },
+  {
+    "Day": "19",
+    "Book": "Exodus",
+    "Chapter": "7-9",
+    "Psa": "19",
+    "Video": "https://www.youtube.com/watch?v=Zy2AQlK6C5k"
+  },
+  {
+    "Day": "20",
+    "Book": "Exodus",
+    "Chapter": "10-12",
+    "Psa": "20",
+    "Video": ""
+  },
+  {
+    "Day": "21",
+    "Book": "Exodus",
+    "Chapter": "13-15",
+    "Psa": "21",
+    "Video": ""
+  },
+  {
+    "Day": "22",
+    "Book": "Exodus",
+    "Chapter": "16-18",
+    "Psa": "22",
+    "Video": ""
+  },
+  {
+    "Day": "23",
+    "Book": "Exodus",
+    "Chapter": "19-21",
+    "Psa": "23",
+    "Video": "https://www.youtube.com/watch?v=oNpTha80yyE"
+  },
+  {
+    "Day": "24",
+    "Book": "Exodus",
+    "Chapter": "22-24",
+    "Psa": "24",
+    "Video": "https://www.youtube.com/watch?v=b0GhR-2kPKI"
+  },
+  {
+    "Day": "25",
+    "Book": "Exodus",
+    "Chapter": "25-27",
+    "Psa": "25",
+    "Video": ""
+  },
+  {
+    "Day": "26",
+    "Book": "Exodus",
+    "Chapter": "28-29",
+    "Psa": "26",
+    "Video": ""
+  },
+  {
+    "Day": "27",
+    "Book": "Exodus",
+    "Chapter": "30-31",
+    "Psa": "27",
+    "Video": ""
+  },
+  {
+    "Day": "28",
+    "Book": "Exodus",
+    "Chapter": "32-34",
+    "Psa": "28",
+    "Video": ""
+  },
+  {
+    "Day": "29",
+    "Book": "Exodus",
+    "Chapter": "35-40",
+    "Psa": "29",
+    "Video": ""
+  },
+  {
+    "Day": "30",
+    "Book": "Leviticus",
+    "Chapter": "1-4",
+    "Psa": "30",
+    "Video": ""
+  },
+  {
+    "Day": "31",
+    "Book": "Leviticus",
+    "Chapter": "1-4",
+    "Psa": "31",
+    "Video": ""
+  },
+  {
+    "Day": "32",
+    "Book": "Leviticus",
+    "Chapter": "5-7",
+    "Psa": "32",
+    "Video": ""
+  },
+  {
+    "Day": "33",
+    "Book": "Leviticus",
+    "Chapter": "8-10",
+    "Psa": "33",
+    "Video": ""
+  },
+  {
+    "Day": "34",
+    "Book": "Leviticus",
+    "Chapter": "11-13",
+    "Psa": "34",
+    "Video": ""
+  },
+  {
+    "Day": "35",
+    "Book": "Leviticus",
+    "Chapter": "14-15",
+    "Psa": "35",
+    "Video": ""
+  },
+  {
+    "Day": "36",
+    "Book": "Leviticus",
+    "Chapter": "19-20",
+    "Psa": "36",
+    "Video": ""
+  },
+  {
+    "Day": "37",
+    "Book": "Leviticus",
+    "Chapter": "21-23",
+    "Psa": "37",
+    "Video": ""
+  },
+  {
+    "Day": "38",
+    "Book": "Leviticus",
+    "Chapter": "24-25",
+    "Psa": "38",
+    "Video": ""
+  },
+  {
+    "Day": "39",
+    "Book": "Leviticus",
+    "Chapter": "26-27",
+    "Psa": "39",
+    "Video": ""
+  },
+  {
+    "Day": "40",
+    "Book": "Numbers",
+    "Chapter": "1-4",
+    "Psa": "40",
+    "Video": "https://www.youtube.com/watch?v=tp5MIrMZFqo"
+  },
+  {
+    "Day": "41",
+    "Book": "Numbers",
+    "Chapter": "5-7",
+    "Psa": "41",
+    "Video": "https://www.youtube.com/watch?v=l9vn5UvsHvM"
+  },
+  {
+    "Day": "42",
+    "Book": "Numbers",
+    "Chapter": "8-10",
+    "Psa": "42",
+    "Video": "https://www.youtube.com/watch?v=zebxH-5o-SQ"
+  },
+  {
+    "Day": "43",
+    "Book": "Numbers",
+    "Chapter": "11-13",
+    "Psa": "43",
+    "Video": ""
+  },
+  {
+    "Day": "44",
+    "Book": "Numbers",
+    "Chapter": "14-16",
+    "Psa": "44",
+    "Video": ""
+  },
+  {
+    "Day": "45",
+    "Book": "Numbers",
+    "Chapter": "17-18",
+    "Psa": "45",
+    "Video": ""
+  },
+  {
+    "Day": "46",
+    "Book": "Numbers",
+    "Chapter": "19-21",
+    "Psa": "46",
+    "Video": ""
+  },
+  {
+    "Day": "47",
+    "Book": "Numbers",
+    "Chapter": "22-24",
+    "Psa": "47",
+    "Video": ""
+  },
+  {
+    "Day": "48",
+    "Book": "Numbers",
+    "Chapter": "25-27",
+    "Psa": "48",
+    "Video": ""
+  },
+  {
+    "Day": "49",
+    "Book": "Numbers",
+    "Chapter": "28-30",
+    "Psa": "49",
+    "Video": ""
+  },
+  {
+    "Day": "50",
+    "Book": "Numbers",
+    "Chapter": "31-32",
+    "Psa": "50",
+    "Video": ""
+  },
+  {
+    "Day": "51",
+    "Book": "Numbers",
+    "Chapter": "33-34",
+    "Psa": "51",
+    "Video": ""
+  },
+  {
+    "Day": "52",
+    "Book": "Numbers",
+    "Chapter": "35-36",
+    "Psa": "52",
+    "Video": ""
+  },
+  {
+    "Day": "53",
+    "Book": "Deuteronomy",
+    "Chapter": "1-3",
+    "Psa": "53",
+    "Video": "https://www.youtube.com/watch?v=q5QEH9bH8AU"
+  },
+  {
+    "Day": "54",
+    "Book": "Deuteronomy",
+    "Chapter": "4-6",
+    "Psa": "54",
+    "Video": "https://www.youtube.com/watch?v=6KQLOuIKaRA"
+  },
+  {
+    "Day": "55",
+    "Book": "Deuteronomy",
+    "Chapter": "7-9",
+    "Psa": "55",
+    "Video": "https://www.youtube.com/watch?v=eLrGM26pmM0"
+  },
+  {
+    "Day": "56",
+    "Book": "Deuteronomy",
+    "Chapter": "10-12",
+    "Psa": "56",
+    "Video": "https://www.youtube.com/watch?v=HV_LUs2lnIQ"
+  },
+  {
+    "Day": "57",
+    "Book": "Deuteronomy",
+    "Chapter": "13-14",
+    "Psa": "57",
+    "Video": "https://www.youtube.com/watch?v=aS4iM6KpPYo"
+  },
+  {
+    "Day": "58",
+    "Book": "Deuteronomy",
+    "Chapter": "15-16",
+    "Psa": "58",
+    "Video": "https://www.youtube.com/watch?v=g_igCcWAMAM"
+  },
+  {
+    "Day": "59",
+    "Book": "Deuteronomy",
+    "Chapter": "17-20",
+    "Psa": "59",
+    "Video": "https://www.youtube.com/watch?v=9aaVy1AmFX4"
+  },
+  {
+    "Day": "60",
+    "Book": "Deuteronomy",
+    "Chapter": "21-23",
+    "Psa": "60",
+    "Video": "https://www.youtube.com/watch?v=3BGO9Mmd_cU"
+  },
+  {
+    "Day": "61",
+    "Book": "Deuteronomy",
+    "Chapter": "24-27",
+    "Psa": "61",
+    "Video": "https://www.youtube.com/watch?v=NMhmDPWeftw"
+  },
+  {
+    "Day": "62",
+    "Book": "Deuteronomy",
+    "Chapter": "28-29",
+    "Psa": "62",
+    "Video": ""
+  },
+  {
+    "Day": "63",
+    "Book": "Deuteronomy",
+    "Chapter": "30-31",
+    "Psa": "63",
+    "Video": ""
+  },
+  {
+    "Day": "64",
+    "Book": "Deuteronomy",
+    "Chapter": "32-34",
+    "Psa": "64",
+    "Video": ""
+  },
+  {
+    "Day": "65",
+    "Book": "Joshua",
+    "Chapter": "1-4",
+    "Psa": "65",
+    "Video": "https://www.youtube.com/watch?v=JqOqJlFF_eU"
+  },
+  {
+    "Day": "66",
+    "Book": "Joshua",
+    "Chapter": "5-8",
+    "Psa": "66",
+    "Video": ""
+  },
+  {
+    "Day": "67",
+    "Book": "Joshua",
+    "Chapter": "9-12",
+    "Psa": "67",
+    "Video": ""
+  },
+  {
+    "Day": "68",
+    "Book": "Joshua",
+    "Chapter": "13-21",
+    "Psa": "68",
+    "Video": ""
+  },
+  {
+    "Day": "69",
+    "Book": "Joshua",
+    "Chapter": "22-24",
+    "Psa": "69",
+    "Video": ""
+  },
+  {
+    "Day": "70",
+    "Book": "Judges",
+    "Chapter": "1-3",
+    "Psa": "70",
+    "Video": "https://www.youtube.com/watch?v=kOYy8iCfIJ4"
+  },
+  {
+    "Day": "71",
+    "Book": "Judges",
+    "Chapter": "4-5",
+    "Psa": "71",
+    "Video": ""
+  },
+  {
+    "Day": "72",
+    "Book": "Judges",
+    "Chapter": "6-8",
+    "Psa": "72",
+    "Video": ""
+  },
+  {
+    "Day": "73",
+    "Book": "Judges",
+    "Chapter": "9-12",
+    "Psa": "73",
+    "Video": ""
+  },
+  {
+    "Day": "74",
+    "Book": "Judges",
+    "Chapter": "13-15",
+    "Psa": "74",
+    "Video": ""
+  },
+  {
+    "Day": "75",
+    "Book": "Judges",
+    "Chapter": "16-18",
+    "Psa": "75",
+    "Video": ""
+  },
+  {
+    "Day": "76",
+    "Book": "Judges",
+    "Chapter": "19-21",
+    "Psa": "76",
+    "Video": ""
+  },
+  {
+    "Day": "77",
+    "Book": "Ruth",
+    "Chapter": "1–4",
+    "Psa": "77",
+    "Video": "https://www.youtube.com/watch?v=0h1eoBeR4Jk&t=12s"
+  },
+  {
+    "Day": "78",
+    "Book": "1Samuel",
+    "Chapter": "1-3",
+    "Psa": "78",
+    "Video": "https://www.youtube.com/watch?v=QJOju5Dw0V0"
+  },
+  {
+    "Day": "79",
+    "Book": "1Samuel",
+    "Chapter": "4-8",
+    "Psa": "79",
+    "Video": ""
+  },
+  {
+    "Day": "80",
+    "Book": "1Samuel",
+    "Chapter": "9-12",
+    "Psa": "80",
+    "Video": ""
+  },
+  {
+    "Day": "81",
+    "Book": "1Samuel",
+    "Chapter": "13-14",
+    "Psa": "81",
+    "Video": ""
+  },
+  {
+    "Day": "82",
+    "Book": "1Samuel",
+    "Chapter": "15-17",
+    "Psa": "82",
+    "Video": ""
+  },
+  {
+    "Day": "83",
+    "Book": "1Samuel",
+    "Chapter": "18-20",
+    "Psa": "83",
+    "Video": ""
+  },
+  {
+    "Day": "84",
+    "Book": "1Samuel",
+    "Chapter": "21-24",
+    "Psa": "80",
+    "Video": ""
+  },
+  {
+    "Day": "85",
+    "Book": "1Samuel",
+    "Chapter": "25-27",
+    "Psa": "85",
+    "Video": ""
+  },
+  {
+    "Day": "86",
+    "Book": "1Samuel",
+    "Chapter": "28-31",
+    "Psa": "86",
+    "Video": ""
+  },
+  {
+    "Day": "87",
+    "Book": "2Samuel",
+    "Chapter": "1-3",
+    "Psa": "87",
+    "Video": "https://www.youtube.com/watch?v=YvoWDXNDJgs"
+  },
+  {
+    "Day": "88",
+    "Book": "2Samuel",
+    "Chapter": "4-8",
+    "Psa": "88",
+    "Video": "https://www.youtube.com/watch?v=3dEh25pduQ8"
+  },
+  {
+    "Day": "89",
+    "Book": "2Samuel",
+    "Chapter": "9-12",
+    "Psa": "89",
+    "Video": ""
+  },
+  {
+    "Day": "90",
+    "Book": "2Samuel",
+    "Chapter": "13-15",
+    "Psa": "90",
+    "Video": ""
+  },
+  {
+    "Day": "91",
+    "Book": "2Samuel",
+    "Chapter": "16-18",
+    "Psa": "91",
+    "Video": ""
+  },
+  {
+    "Day": "92",
+    "Book": "2Samuel",
+    "Chapter": "19-21",
+    "Psa": "92",
+    "Video": ""
+  },
+  {
+    "Day": "93",
+    "Book": "2Samuel",
+    "Chapter": "22-24",
+    "Psa": "93",
+    "Video": ""
+  },
+  {
+    "Day": "94",
+    "Book": "1Kings",
+    "Chapter": "1-3",
+    "Psa": "94",
+    "Video": "https://www.youtube.com/watch?v=bVFW3wbi9pk"
+  },
+  {
+    "Day": "95",
+    "Book": "1Kings",
+    "Chapter": "4-7",
+    "Psa": "95",
+    "Video": ""
+  },
+  {
+    "Day": "96",
+    "Book": "1Kings",
+    "Chapter": "8-10",
+    "Psa": "96",
+    "Video": ""
+  },
+  {
+    "Day": "97",
+    "Book": "1Kings",
+    "Chapter": "11-13",
+    "Psa": "97",
+    "Video": ""
+  },
+  {
+    "Day": "98",
+    "Book": "1Kings",
+    "Chapter": "14-16",
+    "Psa": "98",
+    "Video": ""
+  },
+  {
+    "Day": "99",
+    "Book": "1Kings",
+    "Chapter": "17-19",
+    "Psa": "99",
+    "Video": ""
+  },
+  {
+    "Day": "100",
+    "Book": "1Kings",
+    "Chapter": "20-22",
+    "Psa": "100",
+    "Video": ""
+  },
+  {
+    "Day": "101",
+    "Book": "2Kings",
+    "Chapter": "1-3",
+    "Psa": "101",
+    "Video": ""
+  },
+  {
+    "Day": "102",
+    "Book": "2Kings",
+    "Chapter": "4-7",
+    "Psa": "102",
+    "Video": ""
+  },
+  {
+    "Day": "103",
+    "Book": "2Kings",
+    "Chapter": "8-11",
+    "Psa": "103",
+    "Video": ""
+  },
+  {
+    "Day": "104",
+    "Book": "2Kings",
+    "Chapter": "12-14",
+    "Psa": "104",
+    "Video": ""
+  },
+  {
+    "Day": "105",
+    "Book": "2Kings",
+    "Chapter": "15-17",
+    "Psa": "105",
+    "Video": ""
+  },
+  {
+    "Day": "106",
+    "Book": "2Kings",
+    "Chapter": "18-19",
+    "Psa": "106",
+    "Video": ""
+  },
+  {
+    "Day": "107",
+    "Book": "2Kings",
+    "Chapter": "20-22",
+    "Psa": "107",
+    "Video": ""
+  },
+  {
+    "Day": "108",
+    "Book": "2Kings",
+    "Chapter": "23-25",
+    "Psa": "108",
+    "Video": ""
+  },
+  {
+    "Day": "109",
+    "Book": "Isaiah",
+    "Chapter": "1-4",
+    "Psa": "109",
+    "Video": "https://www.youtube.com/watch?v=d0A6Uchb1F8"
+  },
+  {
+    "Day": "110",
+    "Book": "Isaiah",
+    "Chapter": "5-8",
+    "Psa": "110",
+    "Video": ""
+  },
+  {
+    "Day": "111",
+    "Book": "Isaiah",
+    "Chapter": "9-12",
+    "Psa": "111",
+    "Video": ""
+  },
+  {
+    "Day": "112",
+    "Book": "Isaiah",
+    "Chapter": "13-17",
+    "Psa": "112",
+    "Video": ""
+  },
+  {
+    "Day": "113",
+    "Book": "Isaiah",
+    "Chapter": "18-22",
+    "Psa": "113",
+    "Video": ""
+  },
+  {
+    "Day": "114",
+    "Book": "Isaiah",
+    "Chapter": "23-27",
+    "Psa": "114",
+    "Video": ""
+  },
+  {
+    "Day": "115",
+    "Book": "Isaiah",
+    "Chapter": "28-30",
+    "Psa": "115",
+    "Video": ""
+  },
+  {
+    "Day": "116",
+    "Book": "Isaiah",
+    "Chapter": "31-35",
+    "Psa": "116",
+    "Video": ""
+  },
+  {
+    "Day": "117",
+    "Book": "Isaiah",
+    "Chapter": "36-38",
+    "Psa": "117",
+    "Video": ""
+  },
+  {
+    "Day": "118",
+    "Book": "Isaiah",
+    "Chapter": "39-41",
+    "Psa": "118",
+    "Video": "https://www.youtube.com/watch?v=_TzdEPuqgQg"
+  },
+  {
+    "Day": "119",
+    "Book": "Isaiah",
+    "Chapter": "42-44",
+    "Psa": "119:1-32",
+    "Video": "https://www.youtube.com/watch?v=xmFPS0f-kzs"
+  },
+  {
+    "Day": "120",
+    "Book": "Isaiah",
+    "Chapter": "45-48",
+    "Psa": "119:33-64",
+    "Video": ""
+  },
+  {
+    "Day": "121",
+    "Book": "Isaiah",
+    "Chapter": "49-51",
+    "Psa": "119:65-96",
+    "Video": ""
+  },
+  {
+    "Day": "122",
+    "Book": "Isaiah",
+    "Chapter": "52-54",
+    "Psa": "119:97-128",
+    "Video": ""
+  },
+  {
+    "Day": "123",
+    "Book": "Isaiah",
+    "Chapter": "55-57",
+    "Psa": "119:129-152",
+    "Video": ""
+  },
+  {
+    "Day": "124",
+    "Book": "Isaiah",
+    "Chapter": "58-60",
+    "Psa": "119:153-176",
+    "Video": ""
+  },
+  {
+    "Day": "125",
+    "Book": "Isaiah",
+    "Chapter": "61-64",
+    "Psa": "120",
+    "Video": ""
+  },
+  {
+    "Day": "126",
+    "Book": "Isaiah",
+    "Chapter": "65-66",
+    "Psa": "121",
+    "Video": ""
+  },
+  {
+    "Day": "127",
+    "Book": "Hosea",
+    "Chapter": "1-5",
+    "Psa": "122",
+    "Video": "https://www.youtube.com/watch?v=kE6SZ1ogOVU&t=1s"
+  },
+  {
+    "Day": "128",
+    "Book": "Hosea",
+    "Chapter": "6-10",
+    "Psa": "123",
+    "Video": ""
+  }
+
+
+]
