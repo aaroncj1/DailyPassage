@@ -17,7 +17,7 @@ public class ESVAPI {
         urlStringBuilder.append("&passage=").append(URLEncoder.encode(book + " " + chapter, StandardCharsets.ISO_8859_1));
 
         urlStringBuilder.append("&include-headings=true");
-        System.out.println(urlStringBuilder.toString());
+        //System.out.println(urlStringBuilder.toString());
 
         URL esvURL = new URL(urlStringBuilder.toString());
         InputStream esvStream = esvURL.openStream();
@@ -30,7 +30,7 @@ public class ESVAPI {
         }
 
         esvStream.close();
-        System.out.println(outStringBuilder.toString());
+        //System.out.println(outStringBuilder.toString());
 
         return outStringBuilder.toString();
     }
