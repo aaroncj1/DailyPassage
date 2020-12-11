@@ -29,20 +29,26 @@ public class DevotionalService {
 
         String passage;
         String psalmText;
-      //  if(dailyPassageResponse == null) {
-            try {
-                passage = esvapi.getPassage(todayReading.book, todayReading.chapter);
-                psalmText = esvapi.getPassage("Psalms", todayReading.psalm);
-            } catch (Exception exception) {
-                passage = "failed";
-                psalmText = "failed";
-            }
-        //}
+        String embedVideo;
+        try {
+            passage = esvapi.getPassage(todayReading.book, todayReading.chapter);
+            psalmText = esvapi.getPassage("Psalms", todayReading.psalm);
+        } catch (Exception exception) {
+            passage = "failed";
+            psalmText = "failed";
+        }
+
+        if (todayReading.video != "") {
+            embedVideo = "<div><iframe width=\"620\" height=\"415\" src=" + todayReading.video + "></iframe><div>\n";
+        }
+        else {
+            embedVideo = "";
+        }
 
         dailyPassageResponse.setBook(todayReading.book);
         dailyPassageResponse.setChapter(todayReading.chapter);
         dailyPassageResponse.setPassage(passage);
-        dailyPassageResponse.setVideo("<div><iframe width=\"620\" height=\"415\" src=" + todayReading.video + "></iframe><div>\n");
+        dailyPassageResponse.setVideo(embedVideo);
         dailyPassageResponse.setPsalm(todayReading.psalm);
         dailyPassageResponse.setPsalmText(psalmText);
 
@@ -71,7 +77,11 @@ public class DevotionalService {
         dailyPassageResponse.setBook(todayReading.book);
         dailyPassageResponse.setChapter(todayReading.chapter);
         dailyPassageResponse.setPassage(passage);
-        dailyPassageResponse.setVideo("<div><iframe width=\"620\" height=\"415\" src=" + todayReading.video + "></iframe><div>\n");
+        if(todayReading.video != "") {
+            dailyPassageResponse.setVideo("<div><iframe width=\"620\" height=\"415\" src=" + todayReading.video + "></iframe><div>\n");
+        }else {
+            dailyPassageResponse.setVideo("");
+        }
         dailyPassageResponse.setPsalm(todayReading.psalm);
         dailyPassageResponse.setPsalmText(psalmText);
 
