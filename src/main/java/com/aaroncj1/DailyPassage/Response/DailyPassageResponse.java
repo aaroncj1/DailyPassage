@@ -5,12 +5,23 @@ import lombok.Data;
 @Data
 public class DailyPassageResponse {
 
+    private String style = "<!DOCTYPE html>\n" +
+                            "<html>\n" +
+                            "<head>\n" +
+                            "<style>\n" +
+                            "h2   {color: blue;}\n" +
+                            "p    {color: black;}\n" +
+                            "body    {padding-left: 100px; padding-right:100px;}\n" +
+                            "</style>\n" +
+                            "</head>\n" +
+                            "<body>\n";
     private String book;
     private String chapter;
     private String passage;
     private String psalm;
     private String psalmText;
     private String video;
+    private String endTag = "</body></html>";
 
     public void setBook(String book){
         this.book = book;
@@ -33,7 +44,7 @@ public class DailyPassageResponse {
 
     @Override
     public String toString(){
-        return book + " " + chapter + " " + passage + " " +  video + " " + psalm + " " + psalmText + " ";
+        return style  + passage + " " +  video + " " + psalmText + endTag;
     }
 
 }

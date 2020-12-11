@@ -67,6 +67,7 @@ public class DevotionalService {
         }
         //}
 
+        System.out.println("Showing Passage");
         dailyPassageResponse.setBook(todayReading.book);
         dailyPassageResponse.setChapter(todayReading.chapter);
         dailyPassageResponse.setPassage(passage);
