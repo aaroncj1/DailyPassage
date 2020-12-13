@@ -25,7 +25,11 @@ public class DevotionalService {
         ObjectMapper objectMapper = new ObjectMapper();
 
         Schedule[] schedule = objectMapper.readValue(new File("src/main/resources/static/BPSchedule.json"), Schedule[].class);
-        Schedule todayReading = schedule[today];
+        if(today > schedule.length)
+            today = schedule.length;
+        if(today <= 0)
+            today = 1;
+        Schedule todayReading = schedule[today-1];
 
         String passage;
         String psalmText;
@@ -59,7 +63,9 @@ public class DevotionalService {
         ObjectMapper objectMapper = new ObjectMapper();
 
         Schedule[] schedule = objectMapper.readValue(new File("src/main/resources/static/BPSchedule.json"), Schedule[].class);
-        Schedule todayReading = schedule[today];
+        if(today > schedule.length)
+            today = schedule.length;
+        Schedule todayReading = schedule[today-1];
 
         String passage;
         String psalmText;
