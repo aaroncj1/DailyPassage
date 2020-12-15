@@ -23,14 +23,20 @@ public class Schedule {
     @JsonProperty("Video")
     public String video;
 
+    @JsonProperty("Video2")
+    public String video2;
+
+
     public Schedule(){
     }
 
-    public Schedule(String book, String chapter, String psalm, String video)
+    public Schedule(String book, String chapter, String psalm, String video, String video2)
     {
         this.book = book;
         this.chapter = chapter;
         this.psalm = psalm;
         this.video = video;
+        this.video2 = video2;
+
     }
 }

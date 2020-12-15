@@ -21,7 +21,7 @@ public class DailyPassageResponse {
     private String psalm;
     private String psalmText;
     private String video;
-    private String endTag = "</body></html>";
+    private String video2;
 
     public void setBook(String book){
         this.book = book;
@@ -41,10 +41,15 @@ public class DailyPassageResponse {
     public void setVideo(String video){
         this.video = video;
     }
+    public void setVideo2(String video2){
+        this.video2 = video2;
+    }
+
 
     @Override
     public String toString(){
-        return style  + passage + " " +  video + " " + psalmText + endTag;
+        String endTag = "</body></html>";
+        return style  + passage + " " +  video + " " + video2+ " " + psalmText + endTag;
     }
 
 }
