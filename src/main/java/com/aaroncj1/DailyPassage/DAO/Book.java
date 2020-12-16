@@ -11,11 +11,19 @@ public class Book {
     @JsonProperty("name")
     public String name;
 
+    @JsonProperty("bibleId")
+    public String bibleId;
+
+    @JsonProperty("abbreviation")
+    public String abbreviation;
+
+    @JsonProperty("nameLong")
+    public String nameLong;
+
     public Book(){
     }
 
-    public Book(String id, String name)
-    {
+    public Book(String id, String name) {
         this.id = id;
         this.name = name;
     }

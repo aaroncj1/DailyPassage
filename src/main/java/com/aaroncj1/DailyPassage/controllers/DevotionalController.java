@@ -15,11 +15,33 @@ public class DevotionalController {
     @Autowired
     DevotionalService devotionalService;
 
+    @GetMapping(value = {"{translation}/retrievePassage/{day}"})
+    @ResponseBody
+    public ResponseEntity<String> retrievePassage(@PathVariable("day")Integer day, @PathVariable("translation")String translation) {
+        try {
+            return new ResponseEntity<>(devotionalService.retrievePassage(day, translation), HttpStatus.OK);
+        }
+        catch (Exception ex) {
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @GetMapping(value = {"{translation}/retrievePassage"})
+    @ResponseBody
+    public ResponseEntity<String> retrievePassage(@PathVariable("translation")String translation) {
+        try {
+            return new ResponseEntity<>(devotionalService.retrievePassage(translation), HttpStatus.OK);
+        }
+        catch (Exception ex) {
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
     @GetMapping(value = {"/retrievePassage/{day}"})
     @ResponseBody
     public ResponseEntity<String> retrievePassage(@PathVariable("day")Integer day) {
         try {
-            return new ResponseEntity<>(devotionalService.retrievePassage(day), HttpStatus.OK);
+            return new ResponseEntity<>(devotionalService.retrievePassage(day, ""), HttpStatus.OK);
         }
         catch (Exception ex) {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
@@ -30,7 +52,7 @@ public class DevotionalController {
     @ResponseBody
     public ResponseEntity<String> retrievePassage() {
         try {
-            return new ResponseEntity<>(devotionalService.retrievePassage(), HttpStatus.OK);
+            return new ResponseEntity<>(devotionalService.retrievePassage(""), HttpStatus.OK);
         }
         catch (Exception ex) {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);

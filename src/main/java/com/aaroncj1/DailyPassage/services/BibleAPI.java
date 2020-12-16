@@ -27,46 +27,50 @@ public class BibleAPI {
     @Value("${version.kjv}")
     String kjv;
 
-    public String getPassage(String book, String chapter) throws Exception {
+    public String getPassage(String book, String chapter, String translation) throws Exception {
 
         String urlStringBuilder = null;
         String reference = formatReference(book, chapter);
         HttpHeaders headers = new HttpHeaders();
         headers.set("api-key", "bdfd1ab642fb5f64e4c98406d2ac6b90");
+        String kjv = "de4e12af7f28f599-02";
 
         urlStringBuilder = ("https://api.scripture.api.bible/v1/bibles/") + (kjv) + ("/passages/") + (reference) + ("?content-type=html&include-notes=false&include-titles=true&include-chapter-numbers=false&include-verse-numbers=true&include-verse-spans=false&use-org-id=false");
         RestTemplate restTemplate = new RestTemplate();
         HttpEntity requestEntity = new HttpEntity<>(null, headers);
 
         ResponseEntity<String> outStringBuilder = restTemplate.exchange(urlStringBuilder, HttpMethod.GET, requestEntity, String.class);
-//
-//        URL bibleURL = new URL(urlStringBuilder.toString());
-//        InputStream esvStream = bibleURL.openStream();
-//
-//        StringBuilder outStringBuilder = new StringBuilder();
-//        int nextChar;
-//
-//        while ((nextChar = esvStream.read()) != -1) {
-//            outStringBuilder.append((char) nextChar);
-//        }
-//
-//        esvStream.close();
 
-        return outStringBuilder.toString();
+        return outStringBuilder.getBody();
+    }
+
+    public String getESVPassage(String book, String chapter) throws Exception {
+
+        String urlStringBuilder = null;
+        String reference = formatReference(book, chapter);
+        HttpHeaders headers = new HttpHeaders();
+        urlStringBuilder = ("http://www.esvapi.org/v2/rest/passageQuery?key=TEST&passage=" + book + " " + chapter + "&include-headings=true");
+
+        RestTemplate restTemplate = new RestTemplate();
+        HttpEntity requestEntity = new HttpEntity<>(null, headers);
+
+        ResponseEntity<String> outStringBuilder = restTemplate.exchange(urlStringBuilder, HttpMethod.GET, requestEntity, String.class);
+
+        return outStringBuilder.getBody();
     }
 
     //This Bible Api takes format like GEN.1-GEN.3
     private String formatReference(String book, String chapter) throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
         Book[] bookID = objectMapper.readValue(new File("src/main/resources/static/bookId.json"), Book[].class);
-        String reference = null;
+        String reference = "null";
 
-        for (Book value : bookID) {
-            reference = (book.equals(value.name)) ? value.id : reference;
+        for (int i = 0; i < bookID.length; i++) {
+            reference = (book.equals(bookID[i].name)) ? bookID[i].id : reference;
         }
         String[] chap = chapter.split("-");
 
-        reference = (chap.length > 1) ? reference + chap[0] + "-" + reference + chap[1] : reference + chap[0] ;
+        reference = (chap.length > 1) ? reference + "." + chap[0] + "-" + reference + "." + chap[1] : reference + "." + chap[0] ;
 
         return reference;
     }
