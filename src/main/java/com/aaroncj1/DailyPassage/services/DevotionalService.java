@@ -16,6 +16,9 @@ public class DevotionalService {
     @Autowired
     private ESVAPI esvapi;
 
+    @Autowired
+    private BibleAPI bibleAPI;
+
     DailyPassageResponse dailyPassageResponse = new DailyPassageResponse();
 
 
@@ -32,7 +35,8 @@ public class DevotionalService {
         String embedVideo = /*if*/ (todayReading.video != "" && todayReading.video != null) ? /*then*/ embedVideo = "<div><iframe width=\"620\" height=\"415\" src=" + todayReading.video + "></iframe><div>\n" : /*else*/ "";
         String embedVideo2 = /*if*/ (todayReading.video2 != "" && todayReading.video2 != null) ? /*then*/ embedVideo2 = "<div><iframe width=\"620\" height=\"415\" src=" + todayReading.video2 + "></iframe><div>\n" : /*else*/ "";
         try {
-            passage = esvapi.getPassage(todayReading.book, todayReading.chapter);
+            //passage = esvapi.getPassage(todayReading.book, todayReading.chapter);
+            passage = bibleAPI.getPassage(todayReading.book, todayReading.chapter);
             psalmText = esvapi.getPassage("Psalms", todayReading.psalm);
         } catch (Exception exception) {
             passage = "failed to get passage from ESV API";
