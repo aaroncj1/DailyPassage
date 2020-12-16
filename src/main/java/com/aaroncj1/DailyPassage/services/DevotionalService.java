@@ -30,8 +30,8 @@ public class DevotionalService {
 
         String passage;
         String psalmText = null;
-        String embedVideo = /*if*/ (todayReading.video != "" && todayReading.video != null) ? /*then*/ "<div><iframe width=\"620\" height=\"415\" src=" + todayReading.video + "></iframe><div>\n" : /*else*/ "";
-        String embedVideo2 = /*if*/ (todayReading.video2 != "" && todayReading.video2 != null) ? /*then*/ "<div><iframe width=\"620\" height=\"415\" src=" + todayReading.video2 + "></iframe><div>\n" : /*else*/ "";
+        String embedVideo = /*if*/ (todayReading.video != "" && todayReading.video != null) ? /*then*/ "<div><iframe width=\"620\" height=\"415\" src=" + todayReading.video + "></iframe>\n" : /*else*/ "";
+        String embedVideo2 = /*if*/ (todayReading.video2 != "" && todayReading.video2 != null) ? /*then*/ "<iframe width=\"620\" height=\"415\" src=" + todayReading.video2 + "></iframe></div>\n" : /*else*/ "";
         try {
             passage = (translation.equalsIgnoreCase("esv") || (translation.isEmpty())) ? bibleAPI.getESVPassage(todayReading.book, todayReading.chapter) : bibleAPI.getPassage(todayReading.book, todayReading.chapter, translation);
             psalmText = esvapi.getPassage("Psalms", todayReading.psalm);
