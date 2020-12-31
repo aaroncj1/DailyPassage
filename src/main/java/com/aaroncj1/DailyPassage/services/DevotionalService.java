@@ -25,7 +25,7 @@ public class DevotionalService {
         Schedule[] schedule = objectMapper.readValue(new File("src/main/resources/static/BPSchedule.json"), Schedule[].class);
 
         int today = (inputDay > schedule.length) ? schedule.length : inputDay;
-        today = (today < 0) ? 1 : today;
+        today = (today <= 0) ? 1 : today;
         Schedule todayReading = schedule[today-1];
 
         String passage;
