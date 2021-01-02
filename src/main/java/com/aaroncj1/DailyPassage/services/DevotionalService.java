@@ -65,7 +65,8 @@ public class DevotionalService {
         String embedVideo2 = /*if*/ (todayReading.video2 != "" && todayReading.video2 != null) ? /*then*/ "<div><iframe width=\"620\" height=\"415\" src=" + todayReading.video2 + "></iframe><div>\n" : /*else*/ "";
 
         try {
-            passage = (translation.equalsIgnoreCase("esv") || (translation.isEmpty())) ? bibleAPI.getESVPassage(todayReading.book, todayReading.chapter) : bibleAPI.getPassage(todayReading.book, todayReading.chapter, translation);
+            //passage = (translation.equalsIgnoreCase("esv") || (translation.isEmpty())) ? bibleAPI.getESVPassage(todayReading.book, todayReading.chapter) : bibleAPI.getPassage(todayReading.book, todayReading.chapter, translation);
+            passage = esvapi.getPassage(todayReading.book, todayReading.chapter);
             psalmText = esvapi.getPassage("Psalms", todayReading.psalm);
         } catch (Exception exception) {
             passage = "failed to get passage from ESV API";
