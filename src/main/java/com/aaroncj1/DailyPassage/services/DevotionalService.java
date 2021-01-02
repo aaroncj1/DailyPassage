@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.io.File;
+import java.io.InputStream;
 import java.time.LocalDate;
 import java.time.ZoneId;
 
@@ -23,8 +24,8 @@ public class DevotionalService {
 
     public String retrievePassage(Integer inputDay, String translation) throws Exception {
         ObjectMapper objectMapper = new ObjectMapper();
-        Schedule[] schedule = objectMapper.readValue(new File("src/main/resources/static/BPSchedule.json"), Schedule[].class);
-
+        InputStream stream = DevotionalService.class.getResourceAsStream("/static/BPSchedule.json");
+        Schedule[] schedule = objectMapper.readValue(stream, Schedule[].class);
         int today = (inputDay > schedule.length) ? schedule.length : inputDay;
         today = (today <= 0) ? 1 : today;
         Schedule todayReading = schedule[today-1];
@@ -53,16 +54,8 @@ public class DevotionalService {
     public String retrievePassage(String translation) throws Exception {
         int today = LocalDate.now(ZoneId.of("America/Chicago")).getDayOfYear();
         ObjectMapper objectMapper = new ObjectMapper();
-        System.out.println("Working Directory = " + System.getProperty("user.dir"));
-        System.out.println("Attempting to read from file in: "+ new File("home/ubuntu/repo/DailyPassage/src/main/resources/static/BPSchedule.json").getCanonicalPath());
-        Schedule[] schedule;
-        try {
-            schedule = objectMapper.readValue(new File("home/ubuntu/repo/DailyPassage/src/main/resources/static/BPSchedule.json"), Schedule[].class);
-        }
-        catch (Exception ex)
-        {
-            schedule = objectMapper.readValue(new File("src/main/resources/static/BPSchedule.json"), Schedule[].class);
-        }
+        InputStream stream = DevotionalService.class.getResourceAsStream("/static/BPSchedule.json");
+        Schedule[] schedule = objectMapper.readValue(stream, Schedule[].class);
         today = Math.min(today, schedule.length);
         Schedule todayReading = schedule[today-1];
 
