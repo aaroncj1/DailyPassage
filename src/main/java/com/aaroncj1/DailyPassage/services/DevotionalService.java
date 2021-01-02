@@ -55,7 +55,14 @@ public class DevotionalService {
         ObjectMapper objectMapper = new ObjectMapper();
         System.out.println("Working Directory = " + System.getProperty("user.dir"));
         System.out.println("Attempting to read from file in: "+ new File("src/main/resources/static/BPSchedule.json").getCanonicalPath());
-        Schedule[] schedule = objectMapper.readValue(new File("src/main/resources/static/BPSchedule.json"), Schedule[].class);
+        Schedule[] schedule;
+        try {
+            schedule = objectMapper.readValue(new File("/home/ubuntu/repo/DailyPassage/src/main/resources/static/BPSchedule.json"), Schedule[].class);
+        }
+        catch (Exception ex)
+        {
+            schedule = objectMapper.readValue(new File("src/main/resources/static/BPSchedule.json"), Schedule[].class);
+        }
         today = Math.min(today, schedule.length);
         Schedule todayReading = schedule[today-1];
 
