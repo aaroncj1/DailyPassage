@@ -53,7 +53,8 @@ public class DevotionalService {
     public String retrievePassage(String translation) throws Exception {
         int today = LocalDate.now(ZoneId.of("America/Chicago")).getDayOfYear();
         ObjectMapper objectMapper = new ObjectMapper();
-
+        System.out.println("Working Directory = " + System.getProperty("user.dir"));
+        System.out.println("Attempting to read from file in: "+ new File("src/main/resources/static/BPSchedule.json").getCanonicalPath());
         Schedule[] schedule = objectMapper.readValue(new File("src/main/resources/static/BPSchedule.json"), Schedule[].class);
         today = Math.min(today, schedule.length);
         Schedule todayReading = schedule[today-1];
