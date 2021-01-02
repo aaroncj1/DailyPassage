@@ -44,6 +44,7 @@ public class DevotionalController {
             return new ResponseEntity<>(devotionalService.retrievePassage(day, ""), HttpStatus.OK);
         }
         catch (Exception ex) {
+            System.out.println(ex + "/day");
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
@@ -55,6 +56,7 @@ public class DevotionalController {
             return new ResponseEntity<>(devotionalService.retrievePassage(""), HttpStatus.OK);
         }
         catch (Exception ex) {
+            System.out.println(ex + "/");
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
