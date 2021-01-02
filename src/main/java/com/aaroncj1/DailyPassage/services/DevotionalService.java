@@ -54,10 +54,10 @@ public class DevotionalService {
         int today = LocalDate.now(ZoneId.of("America/Chicago")).getDayOfYear();
         ObjectMapper objectMapper = new ObjectMapper();
         System.out.println("Working Directory = " + System.getProperty("user.dir"));
-        System.out.println("Attempting to read from file in: "+ new File("src/main/resources/static/BPSchedule.json").getCanonicalPath());
+        System.out.println("Attempting to read from file in: "+ new File("home/ubuntu/repo/DailyPassage/src/main/resources/static/BPSchedule.json").getCanonicalPath());
         Schedule[] schedule;
         try {
-            schedule = objectMapper.readValue(new File("/home/ubuntu/repo/DailyPassage/src/main/resources/static/BPSchedule.json"), Schedule[].class);
+            schedule = objectMapper.readValue(new File("home/ubuntu/repo/DailyPassage/src/main/resources/static/BPSchedule.json"), Schedule[].class);
         }
         catch (Exception ex)
         {
