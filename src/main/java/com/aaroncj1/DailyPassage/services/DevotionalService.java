@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 
 import java.io.File;
 import java.time.LocalDate;
+import java.time.ZoneId;
 
 @Component
 public class DevotionalService {
@@ -50,7 +51,7 @@ public class DevotionalService {
         return dailyPassageResponse.toString();
     }
     public String retrievePassage(String translation) throws Exception {
-        int today = LocalDate.now().getDayOfYear();
+        int today = LocalDate.now(ZoneId.of("America/Chicago")).getDayOfYear();
         ObjectMapper objectMapper = new ObjectMapper();
 
         Schedule[] schedule = objectMapper.readValue(new File("src/main/resources/static/BPSchedule.json"), Schedule[].class);
