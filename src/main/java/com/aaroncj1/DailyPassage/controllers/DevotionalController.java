@@ -71,7 +71,7 @@ public class DevotionalController {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
-    @GetMapping(value = {"/retrievePassage/{day}"})
+    @GetMapping(value = {"/{day}"})
     @ResponseBody
     public ResponseEntity<String> retrievePassage_v2(@PathVariable("day")Integer day) {
         try {
