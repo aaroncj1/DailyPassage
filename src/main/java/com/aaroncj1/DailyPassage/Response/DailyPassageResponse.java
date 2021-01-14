@@ -2,6 +2,9 @@ package com.aaroncj1.DailyPassage.Response;
 
 import lombok.Data;
 
+import java.time.LocalDate;
+import java.time.ZoneId;
+
 @Data
 public class DailyPassageResponse {
 
@@ -13,6 +16,7 @@ public class DailyPassageResponse {
                             "p    {color: black;}\n" +
                             "body    {padding-left: 100px; padding-right:100px;}\n" +
                             "</style>\n" +
+                            "<title>Today's Reading</title>" +
                             "</head>\n" +
                             "<body>\n";
     private String book;
@@ -49,7 +53,9 @@ public class DailyPassageResponse {
     @Override
     public String toString(){
         String endTag = "</body></html>";
-        return style  + passage + " " +  video + " " + video2+ " " + psalmText + endTag;
+        int today = LocalDate.now(ZoneId.of("America/Chicago")).getDayOfYear();
+        String now = LocalDate.now(ZoneId.of("America/Chicago")).toString();
+        return style + "<h1> Day: " + today + "; Date: " + now + "</h1>" + passage + " " +  video + " " + video2+ " " + psalmText + endTag;
     }
 
 }

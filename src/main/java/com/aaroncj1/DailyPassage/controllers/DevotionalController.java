@@ -60,4 +60,26 @@ public class DevotionalController {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
+    @GetMapping(value = {"/"})
+    @ResponseBody
+    public ResponseEntity<String> retrievePassage_v2() {
+        try {
+            return new ResponseEntity<>(devotionalService.retrievePassage(""), HttpStatus.OK);
+        }
+        catch (Exception ex) {
+            System.out.println(ex + "/");
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+    @GetMapping(value = {"/retrievePassage/{day}"})
+    @ResponseBody
+    public ResponseEntity<String> retrievePassage_v2(@PathVariable("day")Integer day) {
+        try {
+            return new ResponseEntity<>(devotionalService.retrievePassage(day, ""), HttpStatus.OK);
+        }
+        catch (Exception ex) {
+            System.out.println(ex + "/day");
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
 }
