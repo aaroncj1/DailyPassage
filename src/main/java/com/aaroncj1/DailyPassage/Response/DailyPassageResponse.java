@@ -7,18 +7,6 @@ import java.time.ZoneId;
 
 @Data
 public class DailyPassageResponse {
-
-    private String style = "<!DOCTYPE html>\n" +
-                            "<html>\n" +
-                            "<head>\n" +
-                            "<style>\n" +
-                            "h2   {color: blue;}\n" +
-                            "p    {color: black;}\n" +
-                            "body    {padding-left: 100px; padding-right:100px;}\n" +
-                            "</style>\n" +
-                            "<title>Today's Reading</title>" +
-                            "</head>\n" +
-                            "<body>\n";
     private String book;
     private String chapter;
     private String passage;
@@ -26,6 +14,34 @@ public class DailyPassageResponse {
     private String psalmText;
     private String video;
     private String video2;
+
+    public String getBook() {
+        return book;
+    }
+
+    public String getChapter() {
+        return chapter;
+    }
+
+    public String getPassage() {
+        return passage;
+    }
+
+    public String getPsalm() {
+        return psalm;
+    }
+
+    public String getPsalmText() {
+        return psalmText;
+    }
+
+    public String getVideo() {
+        return video;
+    }
+
+    public String getVideo2() {
+        return video2;
+    }
 
     public void setBook(String book){
         this.book = book;
@@ -48,14 +64,4 @@ public class DailyPassageResponse {
     public void setVideo2(String video2){
         this.video2 = video2;
     }
-
-
-    @Override
-    public String toString(){
-        String endTag = "</body></html>";
-        int today = LocalDate.now(ZoneId.of("America/Chicago")).getDayOfYear();
-        String now = LocalDate.now(ZoneId.of("America/Chicago")).toString();
-        return style + "<h1> Day: " + today + "; Date: " + now + "</h1>" + passage + " " +  video + " " + video2+ " " + psalmText + endTag;
-    }
-
 }
