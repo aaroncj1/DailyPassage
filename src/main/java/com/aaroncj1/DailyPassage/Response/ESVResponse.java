@@ -3,13 +3,15 @@ package com.aaroncj1.DailyPassage.Response;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import java.util.List;
+
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class ESVResponse {
     @JsonProperty("query")
     String query;
 
     @JsonProperty("passages")
-    String passage;
+    List<String> passages;
 
     public String getQuery() {
         return query;
@@ -19,11 +21,11 @@ public class ESVResponse {
         this.query = query;
     }
 
-    public String getPassage() {
-        return passage;
+    public List<String> getPassages() {
+        return passages;
     }
 
-    public void setPassage(String passage) {
-        this.passage = passage;
+    public void setPassages(List<String> passages) {
+        this.passages = passages;
     }
 }

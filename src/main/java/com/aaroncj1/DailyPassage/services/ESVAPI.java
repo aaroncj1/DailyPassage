@@ -1,6 +1,9 @@
 package com.aaroncj1.DailyPassage.services;
 
 import com.aaroncj1.DailyPassage.Response.ESVResponse;
+import com.aaroncj1.DailyPassage.util.EsvResponseUtil;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.http.*;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
@@ -15,7 +18,7 @@ import java.nio.charset.StandardCharsets;
 public class ESVAPI {
 
     public String getPassage(String book, String chapter) throws Exception {
-        String url = "https://api.esv.org/v3/passage/text/";
+        String url = "https://api.esv.org/v3/passage/html/";
         UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl(url)
                 .queryParam("q", book + chapter);
 
@@ -34,6 +37,12 @@ public class ESVAPI {
                 request,
                 String.class
         );
+        ObjectMapper objectMapper = new ObjectMapper();
+        ESVResponse esvResponse = objectMapper.readValue(response.getBody(), ESVResponse.class);
+
+
+        EsvResponseUtil esvResponseUtil = new EsvResponseUtil();
+        String str = esvResponseUtil.parsePassage(esvResponse.getPassages().get(0));
 
 // check response
         if (response.getStatusCode() == HttpStatus.OK) {
@@ -46,6 +55,6 @@ public class ESVAPI {
         //change unicode chars
 
 
-        return response.getBody();
+        return str;
     }
 }
